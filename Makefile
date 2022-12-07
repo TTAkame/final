@@ -24,9 +24,9 @@ main.o: main.cpp
 	$(CC) $(CFLAGS) -c main.cpp
 	
 test:	ecs36b_JSON.o main.o $(OBJ)
-	$(CC) -o test main.o ecs36b_JSON.o $(OBJ) $(LDFLAGS)
+	$(CC) -o run main.o ecs36b_JSON.o $(OBJ) $(LDFLAGS)
 clean:
-	rm -f *.o *~
+	rm -f *.o run
 
 
 
